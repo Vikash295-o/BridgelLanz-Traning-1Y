@@ -1,15 +1,52 @@
-import java.util.Scanner;
 
-public class AddTwoNumbers {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter first number: ");
-        int a = sc.nextInt();
+class VariableExamples{ // class keyword with class name
+int id = 10;      // ------Instance variable
+String name= "Jay";   //---- Instance Variable
 
-        System.out.print("Enter second number: ");
-        int b = sc.nextInt();
+int rollNo;  //instance variable
 
-        System.out.println("Sum = " + (a + b));
-    }
+static int age =20; // static variable.
+
+void display()   // Method
+{
+   String status= "Active"; // local variable
+System.out.println("Status: "+status);  // Printing statement
 }
+public static void main(String args[])  // main method
+{
+
+VariableExamples var= new VariableExamples();
+var.display();  //non static method so we have to create object
+var.rollNo= 20; // instance variable access using object
+
+System.out.println(age); //  static variable access without any object
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
